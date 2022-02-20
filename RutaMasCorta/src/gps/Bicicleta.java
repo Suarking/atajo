@@ -50,13 +50,21 @@ public class Bicicleta {
         }
         
     }
+    //suma de tramos para conseguir la mejor ruta
+    public static int Ruta (int tramo []) {
+    	int total=0, i=0;
+    	for (i=0;i<tramo.length;i++) {
+    		total = total + tramo[i];
+    	}
+    	return total;
+    }
 
     public static void main(String[] args) {
         Bicicleta bici = new Bicicleta();
-        int[] camino1 = {12,34,21,46,25};
-        int[] camino2 = {24,1,5,64,10,15,21};
-        int[] camino3 = {1,5,6,7,8,10,20,46,104};
-        System.out.println("El camino mÃ¡s corto es:"+Bicicleta.rutaCorta(camino1,camino2,camino3)+".");
+        int[] camino1 = {1,3,4,5,6};
+        int[] camino2 = {2,1,5,6,4};
+        int[] camino3 = {1,5,6,3,4};
+        System.out.println("El camino más corto es:"+Bicicleta.rutaCorta(camino1,camino2,camino3)+".");
     }
+  
 }
-
