@@ -1,7 +1,7 @@
 package gps;
 /**
  * Bicicleta class
- * 
+ * @author Suar PL
  * @Java IES Severo Ochoa
  * @2.0
  */
